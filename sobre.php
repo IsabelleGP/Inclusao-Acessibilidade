@@ -15,7 +15,7 @@
 			<p>	O projeto Inclusão e Acessibilidade tem como principal objetivo a conscientização sobre os problemas de locomoção que as pessoas com deficiência enfrentam em seu dia-a-dia e a necessidade de criação de políticas públicas para garantir os principais direitos dessas pessoas.
 				O projeto tem como produto final, o desenvolvimento de um aplicativo que mapeia alguns lugares do centro da cidade de Campinas e é voltado principalmente para pessoas com  deficiência física e/ou visual, visando atender suas necessidades de transporte.
 				Primeiramente será necessária a realização de um cadastro do usuário que possui algum tipo de deficiência e após isso o ele seleciona uma rota partindo do local onde ele se encontra e o lugar que pretende ir, assim o aplicativo  lhe mostrará uma rota que garanta sua segurança e dos aparelhos que ele utiliza para auxiliar na sua locomoção.</p>
-			<p>Ele foi criado pelas alunas do IFSP Câmpus Campinas Isabelle Galvão Pereira, Gabriela Fernandes Almeida Costa e Jullia Lorraine Nunes Silva junto com seu orientador André Luiz Bordignon e coorientador Carlos Eduardo Beluzo, professores também do IFSP Campinas, a partir de diversos estudos e análises sobre o assunto</p>
+			<p>Ele foi criado pelas alunas do IFSP Câmpus Campinas Isabelle Galvão Pereira, Susan Cristini Francalassi e Jullia Lorraine Nunes Silva junto com seu orientador André Luiz Bordignon e coorientador Carlos Eduardo Beluzo, professores também do IFSP Campinas, a partir de diversos estudos e análises sobre o assunto</p>
 		</div>
 		<!--Bloquingho do lado dos textos com uns links em forma de lista
 		<div id="sidebar">
