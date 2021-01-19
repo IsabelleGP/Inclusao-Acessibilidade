@@ -19,79 +19,63 @@
 	</head>
 
 	<body>
-		<?php include("i_menu.php"); ?>
+		<?php 
+			include("i_menu.php"); 
+		?>
 
 		<br/>
 
-		<form class="formulario" >
 			
 		<center>
 
-			<fieldset>
+
 			<h1>Cadastro</h1>
 
 				<br/>
 				<br/>
 
-				<label>Nome:</label>
-				<br/>
-				<input type="text" class="form-control" id="nome"  size="30px">
-
-				<br/>
-				<br/>
-
-				<label>Sobrenome:</label>
-				<br/>
-				<input type="text" class="form-control" id="sobrenome"  size="30px">
-		
-				<br/>
-				<br/>
-
-				<label>Email:</label>
-				<br/>
-				<input type="email" class="form-control" id="email"  size="30px">
-
-				<br/>
-				<br/>
-		
-				<label>Senha:</label>
-				<br/>
-				<input type="password" class="form-control" id="senha" size="30px">
-		
-				<br/>
-				<br/>
-		
-				<label>Sexo:</label>
-				<br/>
-				<select class="form-control" id="Sexo">
+				<form name = "cadastro" action="recebeDados.php" method="post">
+					<label>Nome:</label> 
+					<input type="text" name="nome" maxlength="30" size="30"/><br><br>
 					
-					<option value="1">Masculino</option>
-					<option value="2">Feminino</option>
-				</select>
+					Sobrenome: 
+					<input type="text" name="sobrenome" maxlength="30" size="30"/><br><br>
 
-				<br/>
-				<br/>
-				
-				<label>Tipo de deficiência:</label>
-				<br/>
-				<select class="form-control" id="TipoDef">
-					<option value="">Física</option>
-					<option value="">Visual</option>
+					Email: 
+					<input type="email" name="email" maxlength="30" size="20"/><br><br>
 					
-				</select>
+					Senha: 
+					<input type="password" name="senha" maxlength="30" size="10"/><br><br>
+							
+					<label>Tipo de deficiência:</label>
+					<br/>
+					
+						<select class="form-control" id="tipo_def" name="tipo_def">
+							<option value="fisica">Física</option>
+							<option value="visual">Visual</option>
+						</select>
+					<br/>
+					<br/>
+					<label>Sexo:</label> 
+					<select class="form-control" id="sexo" name="sexo">
+						<option value="masculino">Masculino</option>
+						<option value="feminino">Feminino</option>
+					</select>
+							
+					<br/>
+					<br/>
+					<input type="submit" name="enviar">
+					<input type="reset" name="cancelar">
+				</form>
 
 				<br/>
 				<br/>
 
-			<input type="submit" name="enviar"class="btn btn-primary" formmethod="get" action="recebeDados.php" >
-			
-			<input type="reset" name="cancelar" class="btn btn-danger" value="Cancelar">
 		</center>
- 
-			</fieldset>
-		</form>
 
-		<?php include ("i_rodape.php"); ?>
+	<?php 
+		include ("i_rodape.php"); 
+	?>
 
 	</body>
 

@@ -1,6 +1,6 @@
-create database c_usuario;
+create database bd_cadastro;
 show databases;
-use c_usuario;
+use bd_cadastro;
 
 CREATE TABLE cadastro (
 	senha varchar(10) NOT NULL PRIMARY KEY,

@@ -3,12 +3,12 @@
 	<div id="menu-wrapper">
 		<div id="menu" class="container">
 			<ul>
-				<li><a href="../PHP/index.php">Mapeamento</a></li>
-				<li><a href="../PHP/sobre.php">Sobre</a></li>
-				<li><a href="../PHP/desenvolvimento.php">Desenvolvimento</a></li>
-				<li><a href="../PHP/pesquisa.php">Pesquisa</a></li>
-				<li><a href="../PHP/experienciapratica.php">Experiência Prática</a></li>
-				<li><a href="../PHP/cadastro.php">Cadastro de Usuários</a></li>
+				<li><a href="../index.php">Mapeamento</a></li>
+				<li><a href="../sobre.php">Sobre</a></li>
+				<li><a href="../desenvolvimento.php">Desenvolvimento</a></li>
+				<li><a href="../pesquisa.php">Pesquisa</a></li>
+				<li><a href="../experienciapratica.php">Experiência Prática</a></li>
+				<li><a href="../cadastro.php">Cadastro de Usuários</a></li>
 			</ul>
 		</div>
 
