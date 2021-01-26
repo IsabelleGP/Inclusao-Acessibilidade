@@ -39,19 +39,18 @@
 		die( 'voce não preencheu todos os dados<br />');
 	}
 						
-	@ $db = mysqli_connect('localhost:3306','root','','bd_cadastro'); 
+	$db = mysqli_connect('localhost:3306','root','','bd_cadastro'); 
 	if (!$db){
 		die('não encontrei o servidor');
 	}
 						
-	$query = "insert into adocao values ('$nome','$sobrenome','$email', '$senha', '$tipo_def', '$sexo')";
+	$query = "insert into cadastro (nome, sobrenome, email, senha, tipo_def, sexo) values ('$nome','$sobrenome','$email', '$senha', '$tipo_def', '$sexo')";
 	$result = mysqli_query($db,$query);
 	if ($result){
 		echo  mysqli_affected_rows($db).' cadastro realizado com sucesso.</br>'; 
-		/*else{
+	}
+		else{
 			echo mysqli_error($db).'Erro!<br>';
 			mysqli_close($db);
-		}*/
-	}
-						
+		}
 ?>

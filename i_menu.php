@@ -8,7 +8,7 @@
 				<li><a href="../desenvolvimento.php">Desenvolvimento</a></li>
 				<li><a href="../pesquisa.php">Pesquisa</a></li>
 				<li><a href="../experienciapratica.php">Experiência Prática</a></li>
-				<li><a href="../cadastro.php">Cadastro de Usuários</a></li>
+				<li><a href="../area.php">Área dos Usuários</a></li>
 			</ul>
 		</div>
 
