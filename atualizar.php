@@ -39,6 +39,10 @@
 					<p>Digite o valor de busca:<br/></p>
 						<input name="chave" type="text">
 							<br/><br/>
+							<!--<p>Digite sua senha:</p>
+							<input name="pk" type="text">
+							<br/>
+							<br/>-->
 						<input type="submit" value="Enviar">
 				</form>			
 			</section>	

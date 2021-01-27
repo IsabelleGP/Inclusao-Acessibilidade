@@ -23,34 +23,35 @@
 		?>
 
 		<br/>
-
-	<div id="page" class="container">		
-		<div id="content">
+		
+		<div id="page" class="container">
 			<center>
-				<div class="title">
-					<h2>Escolha: </h2>
-				</div>
-				<h1>É novo por aqui?</h1>
-				<br/>
-				<a href="../cadastro.php">Realizar Cadastro</a>
-				<br/>
-				<br/>
-				<h1>Já nos conhece?</h1> 
-				<a href="../atualizar.php">Atualizar Cadastro</a>
-				<br/>
-				<br/>
-				<h1> Não tem certeza se já nos conhece?</h1>
-				<a href="../pesquisar.php">Pesquisar Cadastro</a>
-				<br/>
-				<br/>
-				<h1> Vai embora? :-( </h1>
-				<a href="../excluir.php">Excluir Cadastro</a>
-
-					
+				<section class="page-section">
+					<form action="pesquisarDados.php" method="post">
+						<p>Selecione um critério:<br/></p>
+							<select name="criterio">
+								<option value="nome">Nome</option>
+								<option value="sobrenome">Sobrenome</option>
+								<option value="email">Email</option>
+								<option value="senha">Senha</option>
+								<option value="tipo_def">Tipo de Deficiência</option>
+								<option value="sexo">Sexo</option>				  
+							</select>
+						<br /><br/>
+						<p>Digite o valor de busca:<br/></p>
+							<input name="chave" type="text">
+						<br/><br/>
+						<!--<p>Digite sua senha:</p>
+							<input name="pk" type="text">
+							<br/>
+							<br/>-->
+							<input type="submit" value="Enviar">	
+					</form>			
+				</section>	
 			</center>
 		</div>
-	</div>
-
+			
+		
 	<?php 
 		include ("i_rodape.php"); 
 	?>

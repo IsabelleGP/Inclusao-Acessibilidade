@@ -23,34 +23,43 @@
 		?>
 
 		<br/>
+	<div id="page" class="container">
+		<center>
 
+			<?php
 
-<?php
+				$nome = $_POST['nome'];
+				$sobrenome = $_POST['sobrenome'];
+				$email = $_POST['email'];
+				$senha = $_POST['senha'];
+				$tipo_def = $_POST['tipo_def'];
+				$sexo = $_POST['sexo'];
+							
+									
+				if (!$nome || !$sobrenome || !$email || !$senha || !$tipo_def || !$sexo){
+					die( 'voce não preencheu todos os dados<br />');
+				}
+									
+				$db = mysqli_connect('localhost:3306','root','','bd_cadastro'); 
+				if (!$db){
+					die('não encontrei o servidor');
+				}
+									
+				$query = "insert into cadastro (nome, sobrenome, email, senha, tipo_def, sexo) values ('$nome','$sobrenome','$email', '$senha', '$tipo_def', '$sexo')";
+				$result = mysqli_query($db,$query);
+				if ($result){
+					echo  mysqli_affected_rows($db).' cadastro realizado com sucesso.</br>'; 
+				}
+					else{
+						echo mysqli_error($db).'Erro!<br>';
+						mysqli_close($db);
+					}
+			?>
+			<br/><br/>
+			<a href="../area.php">Voltar</a>
+		</center>
+	</div>	
 
-	$nome = $_POST['nome'];
-	$sobrenome = $_POST['sobrenome'];
-	$email = $_POST['email'];
-	$senha = $_POST['senha'];
-	$tipo_def = $_POST['tipo_def'];
-	$sexo = $_POST['sexo'];
-				
-						
-	if (!$nome || !$sobrenome || !$email || !$senha || !$tipo_def || !$sexo){
-		die( 'voce não preencheu todos os dados<br />');
-	}
-						
-	$db = mysqli_connect('localhost:3306','root','','bd_cadastro'); 
-	if (!$db){
-		die('não encontrei o servidor');
-	}
-						
-	$query = "insert into cadastro (nome, sobrenome, email, senha, tipo_def, sexo) values ('$nome','$sobrenome','$email', '$senha', '$tipo_def', '$sexo')";
-	$result = mysqli_query($db,$query);
-	if ($result){
-		echo  mysqli_affected_rows($db).' cadastro realizado com sucesso.</br>'; 
-	}
-		else{
-			echo mysqli_error($db).'Erro!<br>';
-			mysqli_close($db);
-		}
-?>
+	<?php 
+		include ("i_rodape.php"); 
+	?>

@@ -23,38 +23,44 @@
 		?>
 
 		<br/>
-
-	<?php		
+	<div id="page" class="container">
+		<center>
+			<?php		
+				
+				$nome = $_POST['nome'];
+				$sobrenome = $_POST['sobrenome'];
+				$email = $_POST['email'];
+				$senha = $_POST['senha'];
+				$tipo_def = $_POST['tipo_def'];
+				$sexo = $_POST['sexo'];
+							
+				if (!$nome && !$sobrenome && !$email && !$senha && !$tipo_def && !$sexo){
+					echo 'Não há alterações a serem feitas<br />';
+					exit;
+				}
+							  
+				$db = mysqli_connect('localhost:3306','root','','bd_cadastro'); 
+				
+				if (!$db){
+					die('não encontrei o servidor');
+				}
+				
+				mysqli_select_db($db,'bd_cadastro');
+							  
+				$query = "update cadastro set nome='$nome', sobrenome='$sobrenome', email='$email', tipo_def='$tipo_def', sexo='$sexo' where senha='$senha'";
+				$result = mysqli_query($db,$query);
+				
+				if (mysqli_affected_rows($db)) 
+					echo "Cadastro atualizado no BD.</br>";
+					else echo mysqli_error($db).'<br>';
+					mysqli_close($db); 
+			?>
+			<br/><br/>
+			<a href="../area.php">Voltar</a>
+		</center>
+	</div>
 		
-		$nome = $_POST['nome'];
-		$sobrenome = $_POST['sobrenome'];
-		$email = $_POST['email'];
-		$senha = $_POST['senha'];
-		$tipo_def = $_POST['tipo_def'];
-		$sexo = $_POST['sexo'];
-					
-		if (!$nome && !$sobrenome && !$email && !$senha && !$tipo_def && !$sexo){
-			echo 'Não há alterações a serem feitas<br />';
-			exit;
-		}
-					  
-		$db = mysqli_connect('localhost:3306','root','','bd_cadastro'); 
-		
-		if (!$db){
-			die('não encontrei o servidor');
-		}
-		
-		mysqli_select_db($db,'bd_cadastro');
-					  
-		$query = "update cadastro set nome='$nome', sobrenome='$sobrenome', email='$email', tipo_def='$tipo_def', sexo='$sexo' where senha='$senha'";
-		$result = mysqli_query($db,$query);
-		
-		if (mysqli_affected_rows($db)) 
-			echo "$nome, $sobrenome, $email, $tipo_def, $sexo atualizado no BD.</br>";
-			else echo mysqli_error($db).'<br>';
-			mysqli_close($db); 
-	?>
-		
+	
 
 	<?php 
 		include ("i_rodape.php"); 
