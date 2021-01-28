@@ -32,11 +32,10 @@
 							<p>Selecione um critério:<br/></p>
 								<select name="criterio">
 									<option value="email">Email</option>
-									<option value="senha">Senha</option>
 								</select>
 
 							<br /><br/>
-							<p>Digite sua senha ou email com base no critério escolhido:<br/></p>
+							<p>Digite seu e-mail para excluir o cadastro:<br/></p>
 								<input name="chave" type="text">
 							<br/><br/>		
 							<input type="submit" value="Enviar">
