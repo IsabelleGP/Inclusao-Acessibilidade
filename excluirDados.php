@@ -58,7 +58,7 @@
 				<a href="../area.php">Voltar</a>
 			</center>
 		</div>
-		
+		</div>
 		
 	<?php 
 		include ("i_rodape.php"); 

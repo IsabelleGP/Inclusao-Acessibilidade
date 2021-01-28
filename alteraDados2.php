@@ -59,6 +59,7 @@
 			<a href="../area.php">Voltar</a>
 		</center>
 	</div>
+	</div>
 		
 	
 

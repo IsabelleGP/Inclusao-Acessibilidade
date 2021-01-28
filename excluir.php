@@ -24,23 +24,27 @@
 
 		<br/>
 		
-		<div id="page" class="container">
-			<center>
-				<section class="page-section">
-					<form action="excluirDados.php" method="post">
-						<p>Selecione um critério:<br/></p>
-							<select name="criterio">
-								<option value="email">Email</option>
-								<option value="senha">Senha</option>
-							</select>
+		<div id="page" class="container">		
+			<div id="content">
+				<center>
+					<section class="page-section">
+						<form action="excluirDados.php" method="post">
+							<p>Selecione um critério:<br/></p>
+								<select name="criterio">
+									<option value="email">Email</option>
+									<option value="senha">Senha</option>
+								</select>
 
-						<br /><br/>
-						<p>Digite sua senha ou email com base no critério escolhido:<br/></p>
-							<input name="chave" type="text">
-						<br/><br/>
+							<br /><br/>
+							<p>Digite sua senha ou email com base no critério escolhido:<br/></p>
+								<input name="chave" type="text">
+							<br/><br/>		
+							<input type="submit" value="Enviar">
 					</form>			
-				</section>	
-			</center>
+					</section>	
+				</center>
+			</div>
+		</div>
 		</div>
 			
 		

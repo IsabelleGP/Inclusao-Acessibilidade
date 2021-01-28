@@ -29,15 +29,6 @@
 			<p>No início era complicada a busca pelos materiais que iriam ser desenvolvidos, entretanto, esta busca foi facilitada com o auxílio de um orientador. Não foi difícil escolher um orientador, devido ao fato de que o grupo já possuía contato com o  atual orientador, cuja função é revisar e ajudar a complementar o material do projeto.</p>
 			<p>Pode-se concluir que a realização de um projeto é complicada, no entanto, o resultado é satisfatório.</p>
 		</div>
-		<div id="content">
-			<div class="title">
-				<h2>Documentos do projeto</h2>
-			</div>
-			<p><a href="../PHP/objetivos.php">Objetivos</a></p>
-			<p><a href="../PHP/metodologia.php">Metodologia</a></p>
-			<p><a href="../PHP/fundamentacao.php">Fundamentação teórica</a></p>
-			<p><a href="../PHP/resultados.php">Resultados Esperados</a></p>
-		</div>
 	</div>
 		</center>
 </div>

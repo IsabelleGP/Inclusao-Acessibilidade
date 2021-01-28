@@ -203,6 +203,7 @@ hr {
 
 #wrapper {
 	background: #FFFFFF url(images/bg01.png) repeat;
+	text-align: center;
 }
 
 #footer-wrapper
@@ -304,6 +305,7 @@ hr {
 #menu {
 	overflow: hidden;
 	height: 100PX;
+	text-align: center;
 }
 
 #menu ul {

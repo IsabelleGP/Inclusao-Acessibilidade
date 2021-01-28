@@ -50,6 +50,7 @@
 			</center>
 		</div>
 	</div>
+	</div>
 
 	<?php 
 		include ("i_rodape.php"); 

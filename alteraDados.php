@@ -24,12 +24,11 @@
 
 		<br/>
 
-	<div id="page" class="container">
+	<div id="page" class="container"><br/>
 		<center>
 			<?php		
 				$criterio = $_POST['criterio'];
 				$chave = $_POST['chave'];
-				/*$pk = $_POST ['pk'];*/
 				$chave = trim($chave);
 				
 				if (!$criterio || !$chave){
@@ -58,7 +57,7 @@
 							<br/>
 							Email: <input type='email' name='email' value='$aa[3]'/><br/>
 							<br/>
-							Senha: <input type='password' name='senha' value='$aa[4]' readonly /><br/>
+							Senha: <input type='password' name='senha' value='$aa[4]' /><br/>
 							<br/>
 							Tipo de deficiência: <input type='tipo_def' name='tipo_def' value='$aa[5]'/><br/>
 							<br/>
@@ -73,7 +72,8 @@
 			<a href="../atualizar.php">Voltar</a>
 		</center>
 	</div>	
-
+	</div>
+	
 	<?php 
 		include ("i_rodape.php"); 
 	?>

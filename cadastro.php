@@ -25,53 +25,57 @@
 
 		<br/>
 
-			
-		<center>
-
-
-			<h1>Cadastro</h1>
-
-				<br/>
-				<br/>
-
-				<form name = "cadastro" action="recebeDados.php" method="post">
-					<label>Nome:</label> 
-					<input type="text" name="nome" maxlength="30" size="30"/><br><br>
-					
-					Sobrenome: 
-					<input type="text" name="sobrenome" maxlength="30" size="30"/><br><br>
-
-					Email: 
-					<input type="email" name="email" maxlength="30" size="20"/><br><br>
-					
-					Senha: 
-					<input type="password" name="senha" maxlength="30" size="10"/><br><br>
-							
-					<label>Tipo de deficiência:</label>
+		
+	<div id="page" class="container">		
+		<div id="content">	
+			<center>
+				<div class="title">
+					<h2>Cadastro: </h2>
+				</div>
 					<br/>
-					
-						<select class="form-control" id="tipo_def" name="tipo_def">
-							<option value="fisica">Física</option>
-							<option value="visual">Visual</option>
+					<br/>
+
+					<form name = "cadastro" action="recebeDados.php" method="post">
+						<label>Nome:</label> 
+						<input type="text" name="nome" maxlength="30" size="30"/><br><br>
+						
+						Sobrenome: 
+						<input type="text" name="sobrenome" maxlength="30" size="30"/><br><br>
+
+						Email: 
+						<input type="email" name="email" maxlength="30" size="20"/><br><br>
+						
+						Senha: 
+						<input type="password" name="senha" maxlength="30" size="10"/><br><br>
+								
+						<label>Tipo de deficiência:</label>
+						<br/>
+						<br/>
+							<select class="form-control" id="tipo_def" name="tipo_def">
+								<option value="fisica">Física</option>
+								<option value="visual">Visual</option>
+							</select>
+						<br/>
+						<br/>
+						<label>Sexo:</label> 
+						<select class="form-control" id="sexo" name="sexo">
+							<option value="masculino">Masculino</option>
+							<option value="feminino">Feminino</option>
 						</select>
-					<br/>
-					<br/>
-					<label>Sexo:</label> 
-					<select class="form-control" id="sexo" name="sexo">
-						<option value="masculino">Masculino</option>
-						<option value="feminino">Feminino</option>
-					</select>
-							
-					<br/>
-					<br/>
-					<input type="submit" name="enviar">
-					<input type="reset" name="cancelar">
-				</form>
+								
+						<br/>
+						<br/>
+						<input type="submit" name="enviar">
+						<input type="reset" name="cancelar">
+					</form>
 
-				<br/>
-				<br/>
-
-		</center>
+					<br/>
+					<br/>
+			</center>
+		</div>
+	</div>
+	</div>
+		
 
 	<?php 
 		include ("i_rodape.php"); 

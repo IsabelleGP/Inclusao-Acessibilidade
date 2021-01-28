@@ -23,7 +23,7 @@
 		?>
 
 		<br/>
-	<div id="page" class="container">
+	
 		<center>
 
 			<?php
@@ -57,8 +57,12 @@
 			?>
 			<br/><br/>
 			<a href="../area.php">Voltar</a>
+			<br/>
+			<br/>
+			<br/>
 		</center>
-	</div>	
+	</div>
+	</div>
 
 	<?php 
 		include ("i_rodape.php"); 

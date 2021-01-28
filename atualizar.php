@@ -23,30 +23,28 @@
 		?>
 
 		<br/>
-		<center>
-			<section class="page-section">
-				<form action="alteraDados.php" method="post">
-					<p>Selecione um critério:<br/></p>
-						<select name="criterio">
-							<option value="nome">Nome</option>
-							<option value="sobrenome">Sobrenome</option>
-							<option value="email">Email</option>
-							<option value="senha">Senha</option>
-							<option value="tipo_def">Tipo de Deficiência</option>
-							<option value="sexo">Sexo</option>				  
-						</select>
-					<br /><br/>
-					<p>Digite o valor de busca:<br/></p>
-						<input name="chave" type="text">
-							<br/><br/>
-							<!--<p>Digite sua senha:</p>
-							<input name="pk" type="text">
-							<br/>
-							<br/>-->
-						<input type="submit" value="Enviar">
-				</form>			
-			</section>	
-		</center>
+	<div id="page" class="container">		
+		<div id="content">
+			<center>
+				<section class="page-section">
+					<form action="alteraDados.php" method="post">
+							<p>Selecione um critério:<br/></p>
+								<select name="criterio">
+									<option value="email">Email</option>
+									<option value="senha">Senha</option>
+								</select>
+
+							<br /><br/>
+							<p>Digite sua senha ou email com base no critério escolhido:<br/></p>
+								<input name="chave" type="text">
+							<br/><br/>		
+							<input type="submit" value="Enviar">
+					</form>			
+				</section>	
+			</center>
+		</div>
+	</div>
+	</div>
 		
 
 	<?php 
