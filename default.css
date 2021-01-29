@@ -201,10 +201,10 @@ hr {
 
 /** WRAPPER */
 
-#wrapper {
+/* #wrapper {
 	background: #FFFFFF url(images/bg01.png) repeat;
 	text-align: center;
-}
+} */
 
 #footer-wrapper
 {
@@ -286,13 +286,13 @@ hr {
 /* Banner                                                                        */
 /*********************************************************************************/
 
-	#banner 
+	/* #banner 
 	{
 		overflow: hidden;
 		height: 70px;
 		background: url(../images/Campinas_mapa.png) no-repeat center;
 		background-size: cover;
-	}
+	} */
 	
 	#banner .image
 	{
